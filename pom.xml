@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.openurp</groupId>
+    <artifactId>openurp-java-parent</artifactId>
+    <version>0.4.11</version>
+  </parent>
+  <groupId>net.openurp.sues</groupId>
+  <artifactId>openurp-minor-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>SUES Minor Parent</name>
+
+  <modules>
+    <module>gradeapp</module>
+  </modules>
+
+  <properties>
+    <java.version>17</java.version>
+    <downloadSources>true</downloadSources>
+    <downloadJavadocs>false</downloadJavadocs>
+    <openurp.version>0.4.0-SNAPSHOT</openurp.version>
+    <beangle3.version>3.10.0</beangle3.version>
+    <maven.javadoc.skip>true</maven.javadoc.skip>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.openurp.edu.grade</groupId>
+        <artifactId>openurp-edu-grade-course</artifactId>
+        <version>${openurp.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.openurp.edu.grade</groupId>
+        <artifactId>openurp-edu-grade-report</artifactId>
+        <version>${openurp.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.openurp.edu.grade</groupId>
+        <artifactId>openurp-edu-grade-teacher</artifactId>
+        <version>${openurp.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.openurp.edu.clazz</groupId>
+        <artifactId>openurp-edu-clazz-schedule</artifactId>
+        <version>${openurp.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.openurp.edu.clazz</groupId>
+        <artifactId>openurp-edu-clazz-election</artifactId>
+        <version>${openurp.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.openurp.edu.clazz</groupId>
+        <artifactId>openurp-edu-clazz-teacher</artifactId>
+        <version>${openurp.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.openurp.edu.program</groupId>
+        <artifactId>openurp-edu-program-plan</artifactId>
+        <version>${openurp.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>
